@@ -19,17 +19,52 @@
 	}
 */
 </style>
-<script type="text/javascript" charset="utf-8">
-	
+
+<!-- Modified Twitter script available at https://github.com/aleifer/clean-twitter-widget -->
+<!-- Forked from https://github.com/fad/clean-twitter-widget -->
+<script type="text/javascript" charset="utf-8">	
 </script>
 <script src="./javascript/twitter-widget.js"></script>
 <script>
 new TWTR.Widget({
   version: 2,
   type: 'profile',
-  rpp: 3,
+  rpp: 4,
   interval: 6000,
-  width: 450,
+  width: 630,
+  height: 100,
+  theme: {
+    shell: {
+      background: '#ec4b00',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#3d393d',
+      links: '#ec4b00'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: false,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('AndrewLeifer').start();
+</script>
+<script type="text/javascript" charset="utf-8">	
+</script>
+<script src="./javascript/twitter-widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 630,
   height: 100,
   theme: {
     shell: {
