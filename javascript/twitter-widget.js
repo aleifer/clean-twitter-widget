@@ -1129,7 +1129,7 @@ if (!Array.forEach) {
 
             if (is.def(features.hashtags) && is.bool(features.hashtags)) {
               (!features.hashtags) ?
-                  twttr.css('#' + this.id + ' a.twtr-hashtag ') : '';
+                  twttr.css('#' + this.id + ' a.twtr-hashtag { display: none; }') : '';
             }
 
             if (is.def(features.timestamp) && is.bool(features.timestamp)) {
